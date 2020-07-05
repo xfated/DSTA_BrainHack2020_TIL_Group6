@@ -49,11 +49,11 @@
     1. After each 5 degree turn, apply a doll detection model to check if there is a doll ahead.
     1. If a doll is detected, move forward for a clearer view and apply the fashion detection model to identify the clothing items.
     1. Match our list of predictions with that from the NLP model.
-      1. If match, turn green momentarily and move back to original position.
-      1. If doesn't match, turn red momentarily and move back to original position.
+        1. If match, turn green momentarily and move back to original position.
+        1. If doesn't match, turn red momentarily and move back to original position.
 1. After 180 degree turn.
     1. Turn 5 degree to the left instead, following the same matching logic as above. (i.e. detect a doll and move forward to detect clothing)
     1. If a match is detected, start the grabbing algorithm.
-      1. Move toward the doll, applying a proportional controller for adjustments with error term = x coordinate of bounding box of the doll
-      1. Move forward until the total area of the bounding box exceeds a threshold. (larger area == closer to the robot)
-      1. Grab the doll.
+        1. Move toward the doll, applying a proportional controller for adjustments with error term = x coordinate of bounding box of the doll
+        1. Move forward until the total area of the bounding box exceeds a threshold. (larger area == closer to the robot)
+        1. Grab the doll.
