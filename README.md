@@ -12,7 +12,7 @@
 1. Draw the path on the map
 
 #### Implemented Logic
-**Target minimap is a 5x5 grid. Top row has 'E', Bottom row has 'S', Middle row has 2 white boxes**
+1. **Target minimap is a 5x5 grid. Top row has 'E', Bottom row has 'S', Middle row has 2 white boxes**
 1. Convert RGB image to single channel
 1. Obtaining S and E positions
   1. Use a letter detection model to obtain bounding box coordinates of 'S' and 'E'
